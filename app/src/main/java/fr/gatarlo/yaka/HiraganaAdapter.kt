@@ -8,17 +8,17 @@ import kotlinx.android.synthetic.main.cell_hiragana.view.*
 
 class HiraganaAdapter : RecyclerView.Adapter<HiraganaAdapter.HiraganaViewHolder>() {
 
-    val _kanaList = arrayOf(Hiragana("あ　a", "い　i", "う　u", "え　e", "お o"),
-        Hiragana("か　ka", "き　ki", "く　ku", "け　ke", "こ　ko"),
-        Hiragana("さ　sa", "し　shi", "す　su", "せ　se", "そ　so"),
-        Hiragana("た　ta", "ち　chi", "つ　tsu", "て　te", "と　to"),
-        Hiragana("な　na", "に　ni", "ぬ　nu", "ね　ne", "の　no"),
-        Hiragana("は　ha", "ひ　hi", "ふ　fu", "へ　he", "ほ　ho"),
-        Hiragana("ま　ma", "み　mi", "む　mu", "め　me", "も　mo"),
-        Hiragana("や　ya", "", "ゆ　yu", "", "よ　yo"),
-        Hiragana("ら　ra", "り　ri", "る　ru", "れ　re", "ろ　ro"),
-        Hiragana("わ　wa", "", "", "", "を　wo"),
-        Hiragana("ん n", "", "", "", ""))
+    val _kanaList = arrayOf(Hiragana("あ\na", "い\ni", "う\nu", "え\ne", "お\no"),
+        Hiragana("か\nka", "き\nki", "く\nku", "け\nke", "こ\nko"),
+        Hiragana("さ\nsa", "し\nshi", "す\nsu", "せ\nse", "そ\nso"),
+        Hiragana("た\nta", "ち\nchi", "つ\ntsu", "て\nte", "と\nto"),
+        Hiragana("な\nna", "に\nni", "ぬ\nnu", "ね\nne", "の\nno"),
+        Hiragana("は\nha", "ひ\nhi", "ふ\nfu", "へ\nhe", "ほ\nho"),
+        Hiragana("ま\nma", "み\nmi", "む\nmu", "め\nme", "も\nmo"),
+        Hiragana("や\nya", "", "ゆ\nyu", "", "よ\nyo"),
+        Hiragana("ら\nra", "り\n　ri", "る\nru", "れ\nre", "ろ\nro"),
+        Hiragana("わ\nwa", "", "", "", "を\nwo"),
+        Hiragana("ん\nn", "", "", "", ""))
 
     class  HiraganaViewHolder(rootView: View) : RecyclerView.ViewHolder(rootView) {
         val learningHiraganaAKanaDisplay = rootView.A_Hiragana

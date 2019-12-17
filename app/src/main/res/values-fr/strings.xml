@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_presentation_text">Bienvenue sur YaKa, votre assistant d\'apprentissage du Japonais !</string>
+    <string name="learning_home_button">APPRENTISSAGE</string>
+    <string name="training_home_button">ENTRAÎNEMENT</string>
+</resources>

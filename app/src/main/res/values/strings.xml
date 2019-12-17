@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name" translatable="false">YaKa</string>
+    <string name="logoyaka" translatable="false">logoYaKa</string>
+    <string name="training_home_button">TRAINING</string>
+    <string name="learning_home_button">LEARNING</string>
+    <string name="home_presentation_text">Welcome on YaKa, your Japanese learning assistant !</string>
+    <string name="learning_hiragana_button" translatable="false">HIRAGANA</string>
+    <string name="learning_katakana_button" translatable="false">KATAKANA</string>
+</resources>

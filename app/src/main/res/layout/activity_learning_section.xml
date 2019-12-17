@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond_ecran2">
+
+    <Button
+        android:id="@+id/learningHiraganaButton"
+        android:layout_width="301dp"
+        android:layout_height="99dp"
+        android:background="@drawable/bouton_inverse_haut"
+        android:text="@string/learning_hiragana_button"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/learningKatakanaButton"
+        app:layout_constraintEnd_toEndOf="@+id/learningKatakanaButton"
+        app:layout_constraintStart_toStartOf="@+id/learningKatakanaButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/learningKatakanaButton"
+        android:layout_width="301dp"
+        android:layout_height="99dp"
+        android:background="@drawable/bouton"
+        android:text="@string/learning_katakana_button"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/learningHiraganaButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

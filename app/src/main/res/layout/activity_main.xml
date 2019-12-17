@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond_ecran2"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/homeTrainingButton"
+        android:layout_width="160dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bouton_inverse"
+        android:text="@string/training_home_button"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/homeLearningButton" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="172dp"
+        android:layout_height="83dp"
+        android:contentDescription="@string/logoyaka"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/titre_cadre" />
+
+    <Button
+        android:id="@+id/homeLearningButton"
+        android:layout_width="160dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bouton"
+        android:text="@string/learning_home_button"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/homeTrainingButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/homeTrainingButton" />
+
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="333dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/zone_texte"
+        android:elegantTextHeight="false"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/home_presentation_text"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -20,12 +20,17 @@ class HiraganaAdapter : RecyclerView.Adapter<HiraganaAdapter.HiraganaViewHolder>
         Hiragana("わ\nwa", "", "", "", "を\nwo"),
         Hiragana("ん\nn", "", "", "", ""))
 
-    class  HiraganaViewHolder(rootView: View) : RecyclerView.ViewHolder(rootView) {
+    class  HiraganaViewHolder(rootView: View) : RecyclerView.ViewHolder(rootView),
+        View.OnClickListener {
         val learningHiraganaAKanaDisplay = rootView.A_Hiragana
         val learningHiraganaIKanaDisplay = rootView.I_Hiragana
         val learningHiraganaUKanaDisplay = rootView.U_Hiragana
         val learningHiraganaEKanaDisplay = rootView.E_Hiragana
         val learningHiraganaOKanaDisplay = rootView.O_Hiragana
+
+        init {
+            rootView.setOnClickListener(this)
+        }
 
         fun fillWithHiragana (hiragana: Hiragana) {
             learningHiraganaAKanaDisplay.text = hiragana.A_Hiragana
@@ -33,6 +38,10 @@ class HiraganaAdapter : RecyclerView.Adapter<HiraganaAdapter.HiraganaViewHolder>
             learningHiraganaUKanaDisplay.text = hiragana.U_Hiragana
             learningHiraganaEKanaDisplay.text = hiragana.E_Hiragana
             learningHiraganaOKanaDisplay.text = hiragana.O_Hiragana
+        }
+
+        override fun onClick(p0: View?) {
+            TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         }
     }
 

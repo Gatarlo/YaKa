@@ -8,24 +8,31 @@ import kotlinx.android.synthetic.main.cell_hiragana.view.*
 
 class HiraganaAdapter : RecyclerView.Adapter<HiraganaAdapter.HiraganaViewHolder>() {
 
-    val _kanaList = arrayOf(Hiragana("あ", "a"),
-        Hiragana("い", "i"), Hiragana("う ", "u"),
-        Hiragana("え", "e"), Hiragana("お", "o"),
-        Hiragana("か ", "ka"),
-        Hiragana("き", "ki"), Hiragana("く ", "ku"),
-        Hiragana("け", "ke"), Hiragana("こ", "ko"),
-        Hiragana("さ", "sa"),
-        Hiragana("し", "shi"), Hiragana("す ", "su"),
-        Hiragana("せ", "se"), Hiragana("そ", "so")
-    )
+    val _kanaList = arrayOf(Hiragana("あ　a", "い　i", "う　u", "え　e", "お o"),
+        Hiragana("か　ka", "き　ki", "く　ku", "け　ke", "こ　ko"),
+        Hiragana("さ　sa", "し　shi", "す　su", "せ　se", "そ　so"),
+        Hiragana("た　ta", "ち　chi", "つ　tsu", "て　te", "と　to"),
+        Hiragana("な　na", "に　ni", "ぬ　nu", "ね　ne", "の　no"),
+        Hiragana("は　ha", "ひ　hi", "ふ　fu", "へ　he", "ほ　ho"),
+        Hiragana("ま　ma", "み　mi", "む　mu", "め　me", "も　mo"),
+        Hiragana("や　ya", "", "ゆ　yu", "", "よ　yo"),
+        Hiragana("ら　ra", "り　ri", "る　ru", "れ　re", "ろ　ro"),
+        Hiragana("わ　wa", "", "", "", "を　wo"),
+        Hiragana("ん n", "", "", "", ""))
 
     class  HiraganaViewHolder(rootView: View) : RecyclerView.ViewHolder(rootView) {
-        val learningHiraganaKanaDisplay = rootView.learningHiraganaKanaDisplay
-        val learningHiraganaTraductionDisplay = rootView.learningHiraganaTraductionDisplay
+        val learningHiraganaAKanaDisplay = rootView.A_Hiragana
+        val learningHiraganaIKanaDisplay = rootView.I_Hiragana
+        val learningHiraganaUKanaDisplay = rootView.U_Hiragana
+        val learningHiraganaEKanaDisplay = rootView.E_Hiragana
+        val learningHiraganaOKanaDisplay = rootView.O_Hiragana
 
         fun fillWithHiragana (hiragana: Hiragana) {
-            learningHiraganaKanaDisplay.text = hiragana.kana
-            learningHiraganaTraductionDisplay.text = hiragana.pronunciation
+            learningHiraganaAKanaDisplay.text = hiragana.A_Hiragana
+            learningHiraganaIKanaDisplay.text = hiragana.I_Hiragana
+            learningHiraganaUKanaDisplay.text = hiragana.U_Hiragana
+            learningHiraganaEKanaDisplay.text = hiragana.E_Hiragana
+            learningHiraganaOKanaDisplay.text = hiragana.O_Hiragana
         }
     }
 

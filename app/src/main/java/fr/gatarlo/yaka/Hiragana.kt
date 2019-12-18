@@ -1,9 +1,13 @@
 package fr.gatarlo.yaka
 
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
+import io.realm.RealmObject
+import io.realm.annotations.RealmClass
 
-data class Hiragana (val A_Hiragana:String, val I_Hiragana:String, val U_Hiragana:String, val E_Hiragana:String, val O_Hiragana:String){
+@RealmClass
+open class Hiragana() : RealmObject(){
+    var A_Hiragana:String = ""
+    var I_Hiragana:String = ""
+    var U_Hiragana:String = ""
+    var E_Hiragana:String = ""
+    var O_Hiragana:String = ""
 }

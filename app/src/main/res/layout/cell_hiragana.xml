@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="90dp"
-    android:background="@drawable/zone_texte">
+    android:layout_height="70dp"
+    android:background="@android:drawable/screen_background_dark_transparent">
 
     <Button
         android:id="@+id/E_Hiragana"
@@ -33,6 +33,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:backgroundTint="@android:color/transparent"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/E_Hiragana"
         app:layout_constraintHorizontal_bias="0.5"
@@ -43,6 +44,7 @@
         android:id="@+id/O_Hiragana"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginEnd="50dp"
         android:backgroundTint="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

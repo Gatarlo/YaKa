@@ -7,15 +7,15 @@ import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var homeLeaningButton: Button
+    private lateinit var homeLearningButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        homeLeaningButton = findViewById(R.id.homeLearningButton)
+        homeLearningButton = findViewById(R.id.homeLearningButton)
         val learningSectionIntent = Intent(this, LearningSection::class.java)
-        homeLeaningButton.setOnClickListener {
+        homeLearningButton.setOnClickListener {
             startActivity(learningSectionIntent)
         }
     }

@@ -1,8 +1,11 @@
 package fr.gatarlo.yaka
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.cell_hiragana.view.*
 
@@ -18,10 +21,17 @@ class HiraganaAdapter : RecyclerView.Adapter<HiraganaAdapter.HiraganaViewHolder>
         Hiragana("や\nya", "", "ゆ\nyu", "", "よ\nyo"),
         Hiragana("ら\nra", "り\n　ri", "る\nru", "れ\nre", "ろ\nro"),
         Hiragana("わ\nwa", "", "", "", "を\nwo"),
-        Hiragana("ん\nn", "", "", "", ""))
+        Hiragana("ん\nn", "", "", "", "")
+    )
 
-    class  HiraganaViewHolder(rootView: View) : RecyclerView.ViewHolder(rootView),
-        View.OnClickListener {
+    fun onHiraganaClick(index:Int, context:Context) {
+        val hiragana = _kanaList[index]
+        Toast.makeText(context, hiragana.A_Hiragana, Toast.LENGTH_SHORT).show()
+
+
+    }
+
+    inner class HiraganaViewHolder(rootView: View) : RecyclerView.ViewHolder(rootView), View.OnClickListener {
         val learningHiraganaAKanaDisplay = rootView.A_Hiragana
         val learningHiraganaIKanaDisplay = rootView.I_Hiragana
         val learningHiraganaUKanaDisplay = rootView.U_Hiragana
@@ -41,8 +51,12 @@ class HiraganaAdapter : RecyclerView.Adapter<HiraganaAdapter.HiraganaViewHolder>
         }
 
         override fun onClick(p0: View?) {
-            TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+            if (p0 != null) {
+                onHiraganaClick(adapterPosition, p0.context)
+            }
         }
+
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HiraganaViewHolder {

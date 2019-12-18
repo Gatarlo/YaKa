@@ -1,6 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fond_troisieme_ecran"/>
+    android:background="@drawable/fond_ecran2"
+    tools:ignore="LabelFor">
+
+
+    <EditText
+        android:id="@+id/addAHiragana"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/addIHiragana"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/addIHiragana" />
+
+    <EditText
+        android:id="@+id/addUHiragana"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="200dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addEHiragana"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/addIHiragana"
+        app:layout_constraintTop_toBottomOf="@+id/helpForAddHiragana" />
+
+    <EditText
+        android:id="@+id/addEHiragana"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/addOHiragana"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/addUHiragana"
+        app:layout_constraintTop_toTopOf="@+id/addUHiragana" />
+
+    <EditText
+        android:id="@+id/addOHiragana"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/addEHiragana"
+        app:layout_constraintTop_toTopOf="@+id/addEHiragana" />
+
+    <EditText
+        android:id="@+id/addIHiragana"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/addUHiragana"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/addAHiragana"
+        app:layout_constraintTop_toTopOf="@+id/addUHiragana" />
+
+    <TextView
+        android:id="@+id/helpForAddHiragana"
+        android:layout_width="351dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/zone_texte"
+        android:text="@string/help_for_add_hiragana"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/addUHiragana"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/learning_hiragana_create_button"
+        android:layout_width="184dp"
+        android:layout_height="68dp"
+        android:background="@drawable/xml_bouton_inverse"
+        android:text="@string/learning_hiragana_add_line_create_button"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addUHiragana" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/learning_hiragana_add_line_title"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/helpForAddHiragana"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

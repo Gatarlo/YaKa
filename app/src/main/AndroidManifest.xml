@@ -27,6 +27,11 @@
         </activity>
 
         <activity
+            android:name=".LearningHiraganaAddLine"
+            android:screenOrientation="userPortrait">
+        </activity>
+
+        <activity
             android:name=".MainActivity"
             android:screenOrientation="userPortrait">
             <intent-filter>

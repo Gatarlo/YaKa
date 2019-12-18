@@ -4,4 +4,8 @@
     <string name="learning_home_button">APPRENTISSAGE</string>
     <string name="training_home_button">ENTRAÎNEMENT</string>
     <string name="learning_hiragana_title">TABLEAU DES HIRAGANA</string>
+    <string name="help_for_add_hiragana">Ajouter les Hiragana dans l\'ordre des lignes suivantes  : A I U E O \n exemple : KA KI KU KE KO</string>
+    <string name="learning_hiragana_add_button">AJOUTER HIRAGANA</string>
+    <string name="learning_hiragana_add_line_create_button">CREER</string>
+    <string name="learning_hiragana_add_line_title">Ajout d\'une nouvelle ligne</string>
 </resources>

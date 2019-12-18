@@ -8,4 +8,7 @@
     <string name="learning_katakana_button" translatable="false">KATAKANA</string>
     <string name="learning_hiragana_title">HIRAGANA TABLE</string>
     <string name="learning_hiragana_add_button">ADD HIRAGANA</string>
+    <string name="help_for_add_hiragana">Add Hiragana in the following line order :  A I U E O \n e.g : KA KI KU KE KO</string>
+    <string name="learning_hiragana_add_line_create_button">CREATE</string>
+    <string name="learning_hiragana_add_line_title">Add a new line</string>
 </resources>

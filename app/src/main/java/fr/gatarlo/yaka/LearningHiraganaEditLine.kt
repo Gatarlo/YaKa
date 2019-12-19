@@ -37,7 +37,7 @@ class LearningHiraganaEditLine : AppCompatActivity() {
         learningHiraganaEditActualOKana.text = "${HiraganaO}"
 
         learningHiraganaEditAKana.setText(selectedLine.A_Hiragana)
-        learningHiraganaEditIKana.setText(selectedLine.E_Hiragana)
+        learningHiraganaEditIKana.setText(selectedLine.I_Hiragana)
         learningHiraganaEditUKana.setText(selectedLine.U_Hiragana)
         learningHiraganaEditEKana.setText(selectedLine.E_Hiragana)
         learningHiraganaEditOKana.setText(selectedLine.O_Hiragana)

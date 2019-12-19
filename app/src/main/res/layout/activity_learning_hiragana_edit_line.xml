@@ -9,30 +9,30 @@
 
 
     <Button
-        android:id="@+id/learningHiraganaEditDeleteButton"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="40dp"
-        android:background="@drawable/xml_bouton_inverse"
-        android:text="@string/learning_hiragana_edit_delete_button"
-        android:textAlignment="center"
-        android:onClick="deleteLine"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/learningHiraganaEditSaveButton" />
-
-    <Button
         android:id="@+id/learningHiraganaEditSaveButton"
         android:layout_width="150dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="40dp"
-        android:background="@drawable/xml_bouton"
+        android:background="@drawable/xml_bouton_inverse"
         android:text="@string/learning_hiragana_edit_save_button"
         android:textAlignment="center"
         android:onClick="editHiragana"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/learningHiraganaEditDeleteButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/learningHiraganaEditDeleteButton" />
+
+    <Button
+        android:id="@+id/learningHiraganaEditDeleteButton"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/xml_bouton"
+        android:text="@string/learning_hiragana_edit_delete_button"
+        android:textAlignment="center"
+        android:onClick="deleteLine"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/learningHiraganaEditSaveButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 

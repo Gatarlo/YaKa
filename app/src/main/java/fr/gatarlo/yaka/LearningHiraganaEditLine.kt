@@ -24,7 +24,10 @@ class LearningHiraganaEditLine : AppCompatActivity() {
         val HiraganaE = getIntent().getStringExtra("E_Hiragana")
         val HiraganaO = getIntent().getStringExtra("O_Hiragana")
 
-        selectedLine = _realm.where(Hiragana::class.java).equalTo("A_Hiragana",HiraganaA).equalTo("I_Hiragana", HiraganaI).equalTo("U_Hiragana", HiraganaU)
+        selectedLine = _realm.where(Hiragana::class.java).equalTo(
+            "A_Hiragana",
+            HiraganaA
+        ).equalTo("I_Hiragana", HiraganaI).equalTo("U_Hiragana", HiraganaU)
             .equalTo("E_Hiragana", HiraganaE).equalTo("O_Hiragana", HiraganaO).findFirst()!!
 
         learningHiraganaEditActualAKana.text = "${HiraganaA}"
@@ -32,6 +35,12 @@ class LearningHiraganaEditLine : AppCompatActivity() {
         learningHiraganaEditActualUKana.text = "${HiraganaU}"
         learningHiraganaEditActualEKana.text = "${HiraganaE}"
         learningHiraganaEditActualOKana.text = "${HiraganaO}"
+
+        learningHiraganaEditAKana.setText(selectedLine.A_Hiragana)
+        learningHiraganaEditIKana.setText(selectedLine.E_Hiragana)
+        learningHiraganaEditUKana.setText(selectedLine.U_Hiragana)
+        learningHiraganaEditEKana.setText(selectedLine.E_Hiragana)
+        learningHiraganaEditOKana.setText(selectedLine.O_Hiragana)
     }
 
     fun editHiragana(button: View) {
@@ -55,7 +64,7 @@ class LearningHiraganaEditLine : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun deleteLine(button: View){
+    fun deleteLine(button: View) {
         _realm.beginTransaction()
 
         selectedLine.deleteFromRealm()

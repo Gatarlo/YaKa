@@ -10,4 +10,5 @@ open class Hiragana() : RealmObject(){
     var U_Hiragana:String = ""
     var E_Hiragana:String = ""
     var O_Hiragana:String = ""
+
 }

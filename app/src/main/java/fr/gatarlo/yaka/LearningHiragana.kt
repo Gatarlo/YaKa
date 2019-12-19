@@ -1,6 +1,5 @@
 package fr.gatarlo.yaka
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -17,7 +16,13 @@ import kotlinx.android.synthetic.main.cell_hiragana.view.*
 class LearningHiragana : AppCompatActivity() {
 
     private lateinit var learningHiraganaAddLineButton: Button
-    lateinit var _realm:Realm
+/*    private lateinit var learningHiraganaAHiraganaDetailsButton: Button
+    private lateinit var learningHiraganaIHiraganaDetailsButton: Button
+    private lateinit var learningHiraganaUHiraganaDetailsButton: Button
+    private lateinit var learningHiraganaEHiraganaDetailsButton: Button
+    private lateinit var learningHiraganaOHiraganaDetailsButton: Button*/
+
+    lateinit var _realm: Realm
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,13 +37,49 @@ class LearningHiragana : AppCompatActivity() {
         learningHiraganaAddLineButton.setOnClickListener {
             startActivity(learningHiraganaAddLineIntent)
         }
+
+        /*learningHiraganaAHiraganaDetailsButton = findViewById(R.id.A_Hiragana)
+        val learningHiraganaAHiraganaDetailsIntent =
+            Intent(this, LearningKanaDetails::class.java)
+        learningHiraganaAHiraganaDetailsButton.setOnClickListener {
+            startActivity(learningHiraganaAHiraganaDetailsIntent)
+        }
+
+        learningHiraganaIHiraganaDetailsButton = findViewById(R.id.I_Hiragana)
+        val learningHiraganaIHiraganaDetailsIntent =
+            Intent(this, LearningKanaDetails::class.java)
+        learningHiraganaIHiraganaDetailsButton.setOnClickListener {
+            startActivity(learningHiraganaIHiraganaDetailsIntent)
+        }
+
+        learningHiraganaUHiraganaDetailsButton = findViewById(R.id.U_Hiragana)
+        val learningHiraganaUHiraganaDetailsIntent =
+            Intent(this, LearningKanaDetails::class.java)
+        learningHiraganaUHiraganaDetailsButton.setOnClickListener {
+            startActivity(learningHiraganaUHiraganaDetailsIntent)
+        }
+
+        learningHiraganaEHiraganaDetailsButton = findViewById(R.id.E_Hiragana)
+        val learningHiraganaEHiraganaDetailsIntent =
+            Intent(this, LearningKanaDetails::class.java)
+        learningHiraganaEHiraganaDetailsButton.setOnClickListener {
+            startActivity(learningHiraganaEHiraganaDetailsIntent)
+        }
+
+        learningHiraganaOHiraganaDetailsButton = findViewById(R.id.O_Hiragana)
+        val learningHiraganaOHiraganaDetailsIntent =
+            Intent(this, LearningKanaDetails::class.java)
+        learningHiraganaOHiraganaDetailsButton.setOnClickListener {
+            startActivity(learningHiraganaOHiraganaDetailsIntent)
+        }*/
     }
+
 
     inner class HiraganaAdapter : RecyclerView.Adapter<HiraganaAdapter.HiraganaViewHolder>() {
 
         val _kanaList = _realm.where(Hiragana::class.java).findAll()
 
-        fun onHiraganaClick( kanaIndex:Int) {
+        fun onLineClick(kanaIndex:Int) {
             val hiragana = _kanaList[kanaIndex]
             transfertKana(hiragana!!)
         }
@@ -51,7 +92,7 @@ class LearningHiragana : AppCompatActivity() {
             val learningHiraganaOKanaDisplay = rootView.O_Hiragana
 
             init {
-                rootView.setOnClickListener { onHiraganaClick(adapterPosition) }
+                rootView.setOnClickListener { onLineClick(adapterPosition) }
             }
 
             fun fillWithHiragana (hiragana: Hiragana) {
@@ -64,7 +105,7 @@ class LearningHiragana : AppCompatActivity() {
 
             override fun onClick(p0: View?) {
                 if (p0 != null) {
-                    onHiraganaClick(adapterPosition)
+                    onLineClick(adapterPosition)
                 }
             }
         }
@@ -95,7 +136,7 @@ class LearningHiragana : AppCompatActivity() {
     }
 
     fun transfertKana (Hiragana: Hiragana){
-        val hiraganaIntent = Intent(this@LearningHiragana, EditHiraganaLine::class.java)
+        val hiraganaIntent = Intent(this@LearningHiragana, LearningHiraganaEditLine::class.java)
         hiraganaIntent.putExtra("A_Hiragana", Hiragana.A_Hiragana)
         hiraganaIntent.putExtra("I_Hiragana", Hiragana.I_Hiragana)
         hiraganaIntent.putExtra("U_Hiragana", Hiragana.U_Hiragana)

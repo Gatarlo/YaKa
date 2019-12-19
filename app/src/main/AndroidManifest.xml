@@ -22,12 +22,16 @@
         </activity>
 
         <activity
-            android:name=".EditHiraganaLine"
+            android:name=".LearningHiraganaEditLine"
             android:screenOrientation="userPortrait">
         </activity>
 
         <activity
             android:name=".LearningHiraganaAddLine"
+            android:screenOrientation="userPortrait">
+        </activity>
+        <activity
+            android:name=".LearningKanaDetails"
             android:screenOrientation="userPortrait">
         </activity>
 

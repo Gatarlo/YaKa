@@ -4,148 +4,167 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fond_ecran2">
+    android:background="@drawable/fond_ecran2"
+    tools:ignore="LabelFor">
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="211dp"
-        android:layout_height="72dp"
-        android:contentDescription="@string/logoyaka"
+
+    <Button
+        android:id="@+id/homeTrainingButton2"
+        android:layout_width="154dp"
+        android:layout_height="60dp"
+        android:background="@drawable/xml_bouton_inverse"
+        android:text="@string/training_home_button"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="210dp"
+        tools:layout_editor_absoluteY="643dp" />
+
+    <Button
+        android:id="@+id/learning_hiragana_save_button"
+        android:layout_width="160dp"
+        android:layout_height="65dp"
+        android:background="@drawable/xml_bouton"
+        android:text="@string/learning_hiragana_edit_save_button"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="642dp" />
+
+    <EditText
+        android:id="@+id/edit_kana_O"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/edit_kana_E"
+        app:layout_constraintTop_toBottomOf="@+id/edit_kana_E" />
+
+    <EditText
+        android:id="@+id/edit_kana_E"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:ems="10"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toTopOf="@+id/edit_kana_O"
+        app:layout_constraintStart_toStartOf="@+id/edit_kana_U"
+        app:layout_constraintTop_toBottomOf="@+id/edit_kana_U" />
+
+    <EditText
+        android:id="@+id/edit_kana_I"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:ems="10"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toTopOf="@+id/edit_kana_U"
+        app:layout_constraintStart_toStartOf="@+id/edit_kana_A"
+        app:layout_constraintTop_toBottomOf="@+id/edit_kana_A" />
+
+    <EditText
+        android:id="@+id/edit_kana_A"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_kana_I"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_kana_U"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:ems="10"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toTopOf="@+id/edit_kana_E"
+        app:layout_constraintStart_toStartOf="@+id/edit_kana_I"
+        app:layout_constraintTop_toBottomOf="@+id/edit_kana_I" />
+
+    <TextView
+        android:id="@+id/actual_kana_O"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:backgroundTint="@android:color/transparent"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/actual_kana_E"
+        app:layout_constraintTop_toTopOf="@+id/edit_kana_O" />
+
+    <TextView
+        android:id="@+id/actual_kana_E"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:backgroundTint="@android:color/transparent"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/actual_kana_U"
+        app:layout_constraintTop_toTopOf="@+id/edit_kana_E" />
+
+    <TextView
+        android:id="@+id/actual_kana_U"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:backgroundTint="@android:color/transparent"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/actual_kana_I"
+        app:layout_constraintTop_toTopOf="@+id/edit_kana_U" />
+
+    <TextView
+        android:id="@+id/actual_kana_A"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginStart="20dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/edit_kana_A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edit_kana_A" />
+
+    <TextView
+        android:id="@+id/title_learning_kana_edit"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:text="@string/details"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024"
-        app:srcCompat="@drawable/titre_cadre" />
+        app:layout_constraintVertical_bias="0.039" />
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="121dp"
-        android:layout_height="41dp"
-        android:contentDescription="@string/logoyaka"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.944"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046"
-        app:srcCompat="@drawable/titre_cadre" />
+    <TextView
+        android:id="@+id/actual_kana_I"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:backgroundTint="@android:color/transparent"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/actual_kana_A"
+        app:layout_constraintTop_toTopOf="@+id/edit_kana_I" />
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="121dp"
-        android:layout_height="41dp"
-        android:contentDescription="@string/logoyaka"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.624"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.524"
-        app:srcCompat="@drawable/titre_cadre" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="121dp"
-        android:layout_height="41dp"
-        android:contentDescription="@string/logoyaka"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.634"
-        app:srcCompat="@drawable/titre_cadre" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="211dp"
-        android:layout_height="72dp"
-        android:contentDescription="@string/logoyaka"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.801"
-        app:srcCompat="@drawable/titre_cadre" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="239dp"
-        android:layout_height="97dp"
-        android:contentDescription="@string/logoyaka"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.402"
-        app:srcCompat="@drawable/titre_cadre" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="244dp"
-        android:layout_height="95dp"
-        android:contentDescription="@string/logoyaka"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.97"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.353"
-        app:srcCompat="@drawable/titre_cadre" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="291dp"
-        android:layout_height="146dp"
-        android:contentDescription="@string/logoyaka"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.591"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652"
-        app:srcCompat="@drawable/titre_cadre" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="299dp"
-        android:layout_height="132dp"
-        android:contentDescription="@string/logoyaka"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.562"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.173"
-        app:srcCompat="@drawable/titre_cadre" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="207dp"
-        android:layout_height="132dp"
-        android:contentDescription="@string/logoyaka"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.957"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.972"
-        app:srcCompat="@drawable/titre_cadre" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="121dp"
-        android:layout_height="41dp"
-        android:contentDescription="@string/logoyaka"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.897"
-        app:srcCompat="@drawable/titre_cadre" />
 </androidx.constraintlayout.widget.ConstraintLayout>

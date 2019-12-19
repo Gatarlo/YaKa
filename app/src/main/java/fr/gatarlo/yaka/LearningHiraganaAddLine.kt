@@ -22,15 +22,13 @@ class LearningHiraganaAddLine : AppCompatActivity() {
         val LearningHiraganaIntent = Intent(this, LearningHiragana::class.java)
         learningHiraganaAddLineButton.setOnClickListener {
 
-            val A_Hiragana = addAHiragana.text.toString()
-            val I_Hiragana = addIHiragana.text.toString()
-            val U_Hiragana = addUHiragana.text.toString()
-            val E_Hiragana = addEHiragana.text.toString()
-            val O_Hiragana = addOHiragana.text.toString()
+            val A_Hiragana = addAHiragana.text.toString().toUpperCase()
+            val I_Hiragana = addIHiragana.text.toString().toUpperCase()
+            val U_Hiragana = addUHiragana.text.toString().toUpperCase()
+            val E_Hiragana = addEHiragana.text.toString().toUpperCase()
+            val O_Hiragana = addOHiragana.text.toString().toUpperCase()
 
-            if (A_Hiragana.isNotEmpty() && I_Hiragana.isNotEmpty()
-                && U_Hiragana.isNotEmpty() && E_Hiragana.isNotEmpty()
-                && O_Hiragana.isNotEmpty()) {
+            if (A_Hiragana.isNotEmpty()) {
                 val hiragana = Hiragana()
 
                 hiragana.A_Hiragana = A_Hiragana
@@ -48,6 +46,8 @@ class LearningHiraganaAddLine : AppCompatActivity() {
                 addUHiragana.text.clear()
                 addEHiragana.text.clear()
                 addOHiragana.text.clear()
+
+                startActivity(LearningHiraganaIntent)
             }
         }
     }

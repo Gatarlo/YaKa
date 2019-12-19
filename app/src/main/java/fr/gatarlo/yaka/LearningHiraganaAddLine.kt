@@ -6,7 +6,6 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import io.realm.Realm
 import kotlinx.android.synthetic.main.activity_learning_hiragana_add_line.*
-import kotlin.math.E
 
 class LearningHiraganaAddLine : AppCompatActivity() {
 
@@ -18,7 +17,7 @@ class LearningHiraganaAddLine : AppCompatActivity() {
         setContentView(R.layout.activity_learning_hiragana_add_line)
         _realm = Realm.getDefaultInstance()
 
-        learningHiraganaAddLineButton = findViewById(R.id.learning_hiragana_create_button)
+        learningHiraganaAddLineButton = findViewById(R.id.learningHiraganaCreateButton)
         val LearningHiraganaIntent = Intent(this, LearningHiragana::class.java)
         learningHiraganaAddLineButton.setOnClickListener {
 

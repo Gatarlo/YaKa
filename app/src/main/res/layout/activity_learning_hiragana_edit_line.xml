@@ -9,27 +9,35 @@
 
 
     <Button
-        android:id="@+id/homeTrainingButton2"
-        android:layout_width="154dp"
+        android:id="@+id/learningHiraganaEditDeleteButton"
+        android:layout_width="150dp"
         android:layout_height="60dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/xml_bouton_inverse"
-        android:text="@string/training_home_button"
+        android:text="@string/learning_hiragana_edit_delete_button"
         android:textAlignment="center"
-        tools:layout_editor_absoluteX="210dp"
-        tools:layout_editor_absoluteY="643dp" />
+        android:onClick="deleteLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/learningHiraganaEditSaveButton" />
 
     <Button
-        android:id="@+id/learning_hiragana_save_button"
-        android:layout_width="160dp"
-        android:layout_height="65dp"
+        android:id="@+id/learningHiraganaEditSaveButton"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/xml_bouton"
         android:text="@string/learning_hiragana_edit_save_button"
         android:textAlignment="center"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="642dp" />
+        android:onClick="editHiragana"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/learningHiraganaEditDeleteButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/edit_kana_O"
+        android:id="@+id/learningHiraganaEditOKana"
         android:layout_width="240dp"
         android:layout_height="80dp"
         android:inputType="textPersonName"
@@ -39,11 +47,11 @@
         android:importantForAutofill="no"
         android:layout_marginBottom="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/edit_kana_E"
-        app:layout_constraintTop_toBottomOf="@+id/edit_kana_E" />
+        app:layout_constraintStart_toStartOf="@+id/learningHiraganaEditEKana"
+        app:layout_constraintTop_toBottomOf="@+id/learningHiraganaEditEKana" />
 
     <EditText
-        android:id="@+id/edit_kana_E"
+        android:id="@+id/learningHiraganaEditEKana"
         android:layout_width="240dp"
         android:layout_height="80dp"
         android:inputType="textPersonName"
@@ -51,12 +59,12 @@
         android:textColor="#FFFFFF"
         android:ems="10"
         android:importantForAutofill="no"
-        app:layout_constraintBottom_toTopOf="@+id/edit_kana_O"
-        app:layout_constraintStart_toStartOf="@+id/edit_kana_U"
-        app:layout_constraintTop_toBottomOf="@+id/edit_kana_U" />
+        app:layout_constraintBottom_toTopOf="@+id/learningHiraganaEditOKana"
+        app:layout_constraintStart_toStartOf="@+id/learningHiraganaEditUKana"
+        app:layout_constraintTop_toBottomOf="@+id/learningHiraganaEditUKana" />
 
     <EditText
-        android:id="@+id/edit_kana_I"
+        android:id="@+id/learningHiraganaEditIKana"
         android:layout_width="240dp"
         android:layout_height="80dp"
         android:inputType="textPersonName"
@@ -64,12 +72,12 @@
         android:textColor="#FFFFFF"
         android:ems="10"
         android:importantForAutofill="no"
-        app:layout_constraintBottom_toTopOf="@+id/edit_kana_U"
-        app:layout_constraintStart_toStartOf="@+id/edit_kana_A"
-        app:layout_constraintTop_toBottomOf="@+id/edit_kana_A" />
+        app:layout_constraintBottom_toTopOf="@+id/learningHiraganaEditUKana"
+        app:layout_constraintStart_toStartOf="@+id/learningHiraganaEditAKana"
+        app:layout_constraintTop_toBottomOf="@+id/learningHiraganaEditAKana" />
 
     <EditText
-        android:id="@+id/edit_kana_A"
+        android:id="@+id/learningHiraganaEditAKana"
         android:layout_width="240dp"
         android:layout_height="80dp"
         android:inputType="textPersonName"
@@ -79,12 +87,12 @@
         android:importantForAutofill="no"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/edit_kana_I"
+        app:layout_constraintBottom_toTopOf="@+id/learningHiraganaEditIKana"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edit_kana_U"
+        android:id="@+id/learningHiraganaEditUKana"
         android:layout_width="240dp"
         android:layout_height="80dp"
         android:inputType="textPersonName"
@@ -92,45 +100,45 @@
         android:textColor="#FFFFFF"
         android:ems="10"
         android:importantForAutofill="no"
-        app:layout_constraintBottom_toTopOf="@+id/edit_kana_E"
-        app:layout_constraintStart_toStartOf="@+id/edit_kana_I"
-        app:layout_constraintTop_toBottomOf="@+id/edit_kana_I" />
+        app:layout_constraintBottom_toTopOf="@+id/learningHiraganaEditEKana"
+        app:layout_constraintStart_toStartOf="@+id/learningHiraganaEditIKana"
+        app:layout_constraintTop_toBottomOf="@+id/learningHiraganaEditIKana" />
 
     <TextView
-        android:id="@+id/actual_kana_O"
+        android:id="@+id/learningHiraganaEditActualOKana"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:textAlignment="center"
         android:textSize="30sp"
         android:backgroundTint="@android:color/transparent"
         android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="@+id/actual_kana_E"
-        app:layout_constraintTop_toTopOf="@+id/edit_kana_O" />
+        app:layout_constraintStart_toStartOf="@+id/learningHiraganaEditActualEKana"
+        app:layout_constraintTop_toTopOf="@+id/learningHiraganaEditOKana" />
 
     <TextView
-        android:id="@+id/actual_kana_E"
+        android:id="@+id/learningHiraganaEditActualEKana"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:textAlignment="center"
         android:textSize="30sp"
         android:backgroundTint="@android:color/transparent"
         android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="@+id/actual_kana_U"
-        app:layout_constraintTop_toTopOf="@+id/edit_kana_E" />
+        app:layout_constraintStart_toStartOf="@+id/learningHiraganaEditActualUKana"
+        app:layout_constraintTop_toTopOf="@+id/learningHiraganaEditEKana" />
 
     <TextView
-        android:id="@+id/actual_kana_U"
+        android:id="@+id/learningHiraganaEditActualUKana"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:textAlignment="center"
         android:textSize="30sp"
         android:backgroundTint="@android:color/transparent"
         android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="@+id/actual_kana_I"
-        app:layout_constraintTop_toTopOf="@+id/edit_kana_U" />
+        app:layout_constraintStart_toStartOf="@+id/learningHiraganaEditActualIKana"
+        app:layout_constraintTop_toTopOf="@+id/learningHiraganaEditUKana" />
 
     <TextView
-        android:id="@+id/actual_kana_A"
+        android:id="@+id/learningHiraganaEditActualAKana"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:textAlignment="center"
@@ -138,17 +146,18 @@
         android:backgroundTint="@android:color/transparent"
         android:layout_marginStart="20dp"
         android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toStartOf="@+id/edit_kana_A"
+        app:layout_constraintEnd_toStartOf="@+id/learningHiraganaEditAKana"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/edit_kana_A" />
+        app:layout_constraintTop_toTopOf="@+id/learningHiraganaEditAKana" />
 
     <TextView
-        android:id="@+id/title_learning_kana_edit"
-        android:layout_width="240dp"
-        android:layout_height="80dp"
+        android:id="@+id/learningHiraganaEditTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:textAlignment="center"
         android:textSize="30sp"
         android:text="@string/details"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -157,14 +166,14 @@
         app:layout_constraintVertical_bias="0.039" />
 
     <TextView
-        android:id="@+id/actual_kana_I"
+        android:id="@+id/learningHiraganaEditActualIKana"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:textAlignment="center"
         android:textSize="30sp"
         android:backgroundTint="@android:color/transparent"
         android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="@+id/actual_kana_A"
-        app:layout_constraintTop_toTopOf="@+id/edit_kana_I" />
+        app:layout_constraintStart_toStartOf="@+id/learningHiraganaEditActualAKana"
+        app:layout_constraintTop_toTopOf="@+id/learningHiraganaEditIKana" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

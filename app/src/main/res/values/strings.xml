@@ -11,7 +11,9 @@
     <string name="help_for_add_hiragana">Add Hiragana in the following line order :  A I U E O \n e.g : KA KI KU KE KO</string>
     <string name="learning_hiragana_add_line_create_button">CREATE</string>
     <string name="learning_hiragana_add_line_title">Add a new line</string>
-    <string name="base_kana">base_kana</string>
-    <string name="details">DETAILS</string>
+    <string name="base_kana" translatable="false">base_kana</string>
+    <string name="details" translatable="false">DETAILS</string>
     <string name="learning_hiragana_edit_save_button">SAVE</string>
+    <string name="learning_hiragana_edit_delete_button">DELETE</string>
+    <string name="edit_image" translatable="false">edit_image</string>
 </resources>

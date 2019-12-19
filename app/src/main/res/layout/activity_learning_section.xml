@@ -9,8 +9,8 @@
 
     <Button
         android:id="@+id/learningHiraganaButton"
-        android:layout_width="301dp"
-        android:layout_height="99dp"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
         android:background="@drawable/xml_bouton_inverse_haut"
         android:text="@string/learning_hiragana_button"
         android:textAlignment="center"
@@ -21,8 +21,8 @@
 
     <Button
         android:id="@+id/learningKatakanaButton"
-        android:layout_width="301dp"
-        android:layout_height="99dp"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
         android:background="@drawable/xml_bouton"
         android:text="@string/learning_katakana_button"
         android:textAlignment="center"

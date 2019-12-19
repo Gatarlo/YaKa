@@ -8,4 +8,6 @@
     <string name="learning_hiragana_add_button">AJOUTER HIRAGANA</string>
     <string name="learning_hiragana_add_line_create_button">CREER</string>
     <string name="learning_hiragana_add_line_title">Ajout d\'une nouvelle ligne</string>
+    <string name="learning_hiragana_edit_save_button">SAUVEGARDER</string>
+    <string name="learning_hiragana_edit_delete_button">SUPPRIMER</string>
 </resources>

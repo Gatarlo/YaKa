@@ -82,8 +82,8 @@
 
     <TextView
         android:id="@+id/helpForAddHiragana"
-        android:layout_width="351dp"
-        android:layout_height="74dp"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
         android:layout_marginTop="200dp"
         android:background="@drawable/zone_texte"
         android:text="@string/help_for_add_hiragana"
@@ -96,9 +96,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/learning_hiragana_create_button"
-        android:layout_width="184dp"
-        android:layout_height="68dp"
+        android:id="@+id/learningHiraganaCreateButton"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
         android:background="@drawable/xml_bouton_inverse"
         android:text="@string/learning_hiragana_add_line_create_button"
         android:textAlignment="center"
@@ -108,7 +108,7 @@
         app:layout_constraintTop_toBottomOf="@+id/addUHiragana" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/learningHiraganaAddTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/learning_hiragana_add_line_title"

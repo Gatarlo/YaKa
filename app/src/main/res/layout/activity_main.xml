@@ -9,8 +9,8 @@
 
     <Button
         android:id="@+id/homeTrainingButton"
-        android:layout_width="154dp"
-        android:layout_height="60dp"
+        android:layout_width="160dp"
+        android:layout_height="65dp"
         android:layout_marginBottom="50dp"
         android:background="@drawable/xml_bouton_inverse"
         android:text="@string/training_home_button"
@@ -45,11 +45,11 @@
 
     <TextView
         android:id="@+id/welcomeMessage"
-        android:layout_width="333dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="12dp"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="12dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/zone_texte"
         android:elegantTextHeight="false"
         android:fontFamily="sans-serif-black"

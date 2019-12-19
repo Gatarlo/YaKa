@@ -7,7 +7,7 @@
     android:background="@drawable/fond_ecran2">
 
     <TextView
-        android:id="@+id/title_learning_kana_details"
+        android:id="@+id/learningHiraganaKanaDetailsTitle"
         android:layout_width="240dp"
         android:layout_height="80dp"
         android:textAlignment="center"
@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.039" />
 
     <TextView
-        android:id="@+id/learning_hiragana_kana"
+        android:id="@+id/learningHiraganaKanaDetailKanaDisplay"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="50dp"

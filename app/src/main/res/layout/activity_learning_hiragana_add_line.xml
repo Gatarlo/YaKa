@@ -83,7 +83,7 @@
     <TextView
         android:id="@+id/helpForAddHiragana"
         android:layout_width="350dp"
-        android:layout_height="70dp"
+        android:layout_height="75dp"
         android:layout_marginTop="200dp"
         android:background="@drawable/zone_texte"
         android:text="@string/help_for_add_hiragana"

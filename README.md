@@ -14,5 +14,5 @@ So you can create blank characters (except for the first kana)!
 The option of adding supplementary line is also here to complete the table with new characters or accentuated kana !
 
 # Supplementary files
-A demonstration video is available for you,
+A demonstration video will soon available for you,
 Enjoy !!!
